@@ -1,0 +1,110 @@
+@charset "UTF-8";
+:root{
+    font-family: Raleway Flex,Raleway-Fallback,sans-serif;
+    font-family: Reklame Script,Reklame-Script-Fallback,serif;
+}
+
+/* reset */
+*,
+*::after,
+*::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+h1{
+    font-family: reklame Script;
+}
+header{
+    /*title text */
+    font-size: 5vh;
+    text-align: left;
+    color: aliceblue;
+    background-color: gray;
+    padding: 2%;
+}
+nav{
+    display: block;
+    background-color: rgba(128, 128, 128, 0.932);
+    padding: 1%;
+    text-align: right;
+    padding-right: 9%;
+    
+}
+nav a{
+    
+    background-color: rgba(128, 128, 128, 0.116);
+   /*box-shadow: 3px 5px 0px rgba(0, 0, 0, 0.212);*/
+    padding: 1%;
+
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    background-color: rgba(51, 49, 49, 0.562);
+    border-radius: 5%;
+    box-shadow: 1px 2px 0px rgba(255, 254, 254, 0.219);
+
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.603);
+    text-decoration: none;
+    /*font-size: 1.2em;*/
+}
+/*------------------------------------------------------------------------------*/
+body{
+
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap; 
+
+    align-items: center;
+    justify-content: center;
+}
+main h1{
+    font-size: 3em;
+}
+main h2{
+    font-size: 2em;
+}
+
+div{
+    padding: 2% 10% 8% 10%;
+/*  padding-top:2%;
+    padding-right: 10%;
+    padding-bottom: 8%;
+    padding-left: 10%;*/
+}
+
+section{
+    padding: 5%;
+}
+
+#d2{
+    background-color: rgba(105,160,215,.4);
+}
+
+
+
+.box{
+    background-color: rgba(218, 218, 218, 0.603);
+
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    margin: 1%;
+
+    border-radius: 20px;
+
+    font-size: 1.2em;
+
+    height: 100vhs;
+    width: 30%;
+
+    padding-left: 8px;
+    padding-top: 40px;
+    text-align: center;
+}

@@ -21,9 +21,7 @@
   box-sizing: border-box;
 }
 .main{
-    margin: 0%;
-    padding: 0%;
-    width: auto;
+    margin: 0%; padding: 0%;
 
     border: 1px black;
 }
@@ -42,9 +40,12 @@
 
 
 #tab{
-    display: inline-flex;
-    position: relative;
-    width: 70vw; height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 60px;
+    justify-content: center;
+
+    width: 80vw; height: 100vh;
 
 }
 

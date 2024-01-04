@@ -79,7 +79,6 @@ body{
     justify-content: center;
 
     margin: 0%; padding: 0%;
-    height: 100vh; width: 100vw;
 }
 
 div a{
@@ -101,8 +100,7 @@ div a{
 
     font-size: 1.2em;
 
-    height: 100vhs;
-    /*width: 30%;  */ 
+    width: 30vw;  
 
     padding-left: 8px;
     padding-top: 40px;

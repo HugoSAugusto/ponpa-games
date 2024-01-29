@@ -45,20 +45,21 @@
     display: flex;
     flex-wrap: wrap;
     grid-template-columns:repeat(auto-fit, minmax(200px, 0fr));
-    grid-column-gap: 70px; 
+    grid-column-gap: 40px; 
     grid-row-gap: 70px;
  
     justify-content: center;
 
     width: 90vw; height: 60vh; 
     size: 1700px;
+    margin-top: 10px;
 }
 .ima{
     position: relative;
     background-color: white;
     border-radius: 8%;
-    width: 20vw; height: 20vw;
-    margin: 10px;
+    width: 16vw; height: 20vw;
+    
 }
 
 img{
@@ -67,14 +68,7 @@ img{
     width: auto; height: 33vh;
 }
 
-a > p{
-    background-color: brown;
-}
-
 @media (max-width: 900px){
-    a > p{
-        background-color: blue;
-    }
     .ima{
         width: 30vw; height: 30vw;
         margin: auto;   
@@ -82,10 +76,6 @@ a > p{
 }
 
 @media (max-width: 800px){
-    a > p{
-        background-color: rgb(238, 255, 0);
-    }
-
     img{
         width: auto; height: 28vh;
     }

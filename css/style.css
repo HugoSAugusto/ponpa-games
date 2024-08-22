@@ -1,17 +1,16 @@
 @charset "UTF-8";
 :root{
-    font-family: Raleway Flex,Raleway-Fallback,sans-serif;
-    font-family: Reklame Script,Reklame-Script-Fallback,serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root{
-    --primary-color: rgba(150, 142, 142, 0.623);
+    --primary-color: rgba(223, 223, 223, 0.623);
 
-    --background-color: gray;
+    --background-color: rgba(255, 255, 255, 0.589);
 
     --nav-bar-color: rgba(17, 17, 17, 0.932);
 
-    --box-color: rgba(218, 218, 218, 0.603);
+    --box-color: rgba(102, 100, 100, 0.603);
 }
 
 /* reset */
@@ -23,14 +22,17 @@
   box-sizing: border-box;
 }
 
-
 header{
     /*title text */
     font-size: 5vh;
     text-align: left;
     color: aliceblue;
     text-shadow: 1px 1px 20px black;
+}
 
+header a{
+    text-decoration: none;
+    color: aliceblue;
 }
 
 nav{
@@ -70,46 +72,31 @@ body{
 
     padding-left: 8vh;
     padding-right: 8vh;
-}
+}   
 /*------------------------------------------------------------------------------*/
 
-main{
-    display: flex;
+
+.main{
+    display: inline-flex;
     flex-wrap: wrap; 
 
     align-items: center;
     justify-content: center;
-}
-main h1{
-    font-size: 3em;
-}
-main h2{
-    font-size: 2em;
+
+    margin: 0%; padding: 0%;
 }
 
-div{
-    padding: 2% 10% 8% 10%;
-/*  padding-top:2%;
-    padding-right: 10%;
-    padding-bottom: 8%;
-    padding-left: 10%;*/
+div a{
+    padding: 1%;
+
+    text-decoration: none;
+    color: black;
 }
-
-section{
-    padding: 5%;
-}
-
-#d2{
-    background-color: rgba(105,160,215,.4);
-}
-
-
 
 .box{
-    background-color: rgba(218, 218, 218, 0.603);
+    background-color: var(--box-color);
+    
 
-    display: flex;
-    flex-direction: column;
     padding: 1vh;
     margin: 1%;
 
@@ -117,10 +104,24 @@ section{
 
     font-size: 1.2em;
 
-    height: 100vhs;
-    width: 30%;
+    width: 50vw;  
 
     padding-left: 8px;
     padding-top: 40px;
-    text-align: center;
+    text-align: left;
+    
+}
+
+.box:hover{
+    width: 51vw;  height: auto;
+    padding: 25px;
+
+    box-shadow: 5px 4px 0px rgba(0, 0, 0, 0.425);
+
+    transition: all 0.6s;
+    
+}
+
+.bix{
+    padding-left: 5%;
 }

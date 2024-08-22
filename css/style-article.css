@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Raleway Flex,Raleway-Fallback,sans-serif;
+    font-family: Reklame Script,Reklame-Script-Fallback,serif;
 }
 
 :root{
@@ -29,7 +30,11 @@ header{
     text-align: left;
     color: aliceblue;
     text-shadow: 1px 1px 20px black;
+}
 
+header a{
+    text-decoration: none;
+    color: aliceblue;
 }
 
 nav{
@@ -69,31 +74,46 @@ body{
 
     padding-left: 8vh;
     padding-right: 8vh;
-}   
+}
 /*------------------------------------------------------------------------------*/
 
-
-.main{
-    display: inline-flex;
+main{
+    display: flex;
     flex-wrap: wrap; 
 
     align-items: center;
     justify-content: center;
-
-    margin: 0%; padding: 0%;
+}
+main h1{
+    font-size: 3em;
+}
+main h2{
+    font-size: 2em;
 }
 
-div a{
-    padding: 1%;
-
-    text-decoration: none;
-    color: black;
+div{
+    padding: 2% 10% 8% 10%;
+/*  padding-top:2%;
+    padding-right: 10%;
+    padding-bottom: 8%;
+    padding-left: 10%;*/
 }
+
+section{
+    padding: 5%;
+}
+
+#d2{
+    background-color: rgba(105,160,215,.4);
+}
+
+
 
 .box{
-    background-color: var(--box-color);
-    
+    background-color: rgba(218, 218, 218, 0.603);
 
+    display: flex;
+    flex-direction: column;
     padding: 1vh;
     margin: 1%;
 
@@ -101,24 +121,10 @@ div a{
 
     font-size: 1.2em;
 
-    width: 50vw;  
+    height: 100vhs;
+    width: 30%;
 
     padding-left: 8px;
     padding-top: 40px;
-    text-align: left;
-    
-}
-
-.box:hover{
-    width: 51vw;  height: auto;
-    padding: 25px;
-
-    box-shadow: 5px 4px 0px rgba(0, 0, 0, 0.425);
-
-    transition: all 0.6s;
-    
-}
-
-.bix{
-    padding-left: 5%;
+    text-align: center;
 }
